@@ -1,12 +1,8 @@
 //The logical representation of the grid / table
 class TTTgrid {
-	constructor() {
-		//init grid with zeros 
-        this.grid = [
-			[0,0,0],
-			[0,0,0],
-			[0,0,0]
-		]
+	constructor() { 
+		this.grid = 0;   /* Just create this. Will be initialized later  */
+		this.reset();
 	}
 
 	setCross(row, col) {
