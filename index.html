@@ -5,24 +5,28 @@
       <meta charset="utf-8"/>
       <link rel="stylesheet" type="text/css" href="style.css">
       <script type="text/javascript" src="JavaScript.js"></script>
+      <script type="text/javascript" src="setupPage.js"></script>
+    <script>
+    </script>
     </head>
     <body> 
-      <table>
+      <table id="gridTable">
         <tr>
+          <td><div id="div00" style="width:50px; height:50px"></div></td>
+          <td><div id="div01" style="width:50px; height:50px"></div></td>
+          <td><div id="div02" style="width:50px; height:50px"></div></td>
+        </tr>
+        <tr>
+          <td><div id="div10" style="width:50px; height:50px"></div></td>
           <td><div id="div11" style="width:50px; height:50px"></div></td>
           <td><div id="div12" style="width:50px; height:50px"></div></td>
-          <td><div id="div13" style="width:50px; height:50px"></div></td>
         </tr>
         <tr>
+          <td><div id="div20" style="width:50px; height:50px"></div></td>
           <td><div id="div21" style="width:50px; height:50px"></div></td>
           <td><div id="div22" style="width:50px; height:50px"></div></td>
-          <td><div id="div23" style="width:50px; height:50px"></div></td>
         </tr>
-        <tr>
-          <td><div id="div31" style="width:50px; height:50px"></div></td>
-          <td><div id="div32" style="width:50px; height:50px"></div></td>
-          <td><div id="div33" style="width:50px; height:50px"></div></td>
-        </tr>
+        <script>addButtonsToTable();</script>
       </table>
     </body>
     </html>
