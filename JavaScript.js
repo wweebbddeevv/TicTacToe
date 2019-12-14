@@ -41,7 +41,6 @@ class TTTgrid {
 		return 0;	
 	}
 
-
 	checkDiagonalsForWinner() {
 		if (this.grid[0][0] == this.grid[1][1] && this.grid[1][1] == this.grid[2][2] &&
 			this.grid[0][0] > 0) {
@@ -71,8 +70,7 @@ class TTTgrid {
 		}
 	}
 
-	reset()
-	{
+	reset() {
 		this.grid = [
 			[0,0,0],
 			[0,0,0],
@@ -105,11 +103,11 @@ function clicked(row, col)
 	}
 	
 	if (currentSymbol == "X") {
-		  currentRound++;
-		  /* update GUI first, then update logical representation */
-		  clickedButtons[0].setAttribute("value", currentSymbol)
-		  logicalGrid.setCross(row, col);
-		  currentSymbol = "O";
+		currentRound++;
+		/* update GUI first, then update logical representation */
+		clickedButtons[0].setAttribute("value", currentSymbol)
+		logicalGrid.setCross(row, col);
+		currentSymbol = "O";
 	} else if (currentSymbol == "O") {
 		/* update GUI first, then update logical representation */
 		clickedButtons[0].setAttribute("value", currentSymbol)
