@@ -77,8 +77,11 @@ class TTTgrid {
 
 	reset()
 	{
-
-		
+		this.grid = [
+			[0,0,0],
+			[0,0,0],
+			[0,0,0]
+		]		
 	}
 
 }
@@ -89,8 +92,8 @@ logicalGrid = new TTTgrid();
 
 function reset()
 {
-
-
+	logicalGrid.reset();
+	location.reload();
 }
 
 function clicked(row, col)
@@ -122,6 +125,7 @@ function clicked(row, col)
 		if (winner != "") {
 			var msg = "The winner is " + winner;
 			alert(msg);
+			reset();
 		}
 	}
 }
