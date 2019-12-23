@@ -9,7 +9,7 @@
             "type": "firefox",
             "request": "launch",
             "reAttach": true,
-            "file": "/home/ron/webdev/TicTacToe/index.html"
+            "file": "/home/ron/webdev/TicTacToe/index.html?x=1&y=2"
         }
     ]
 }

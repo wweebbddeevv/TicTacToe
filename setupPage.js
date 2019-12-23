@@ -23,3 +23,22 @@ function addButtonsToTable()
     add(2, 1);
     add(2, 2);
 }
+
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+}
+
+
+
+function setupPage()
+{
+    addButtonsToTable()
+    
+//    var number = getUrlVars()["x"];
+  //  var mytext = getUrlVars()["text"];
+    
+}
